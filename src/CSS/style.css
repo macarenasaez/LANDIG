@@ -48,10 +48,8 @@ table {
 	background-image: url(../assets/img.p/imagemain.png);
 	background-repeat: no-repeat;
     background-size: cover;
-
-	 
-	border: solid #06122C 1px;
 }
+
 .logo-title img{
 	
 	display: flex;
@@ -75,14 +73,21 @@ color: #FFFFFF;
 margin-left:25%;
 }
 
-/*.panelists-section{
-	display: flex;
+.card {
+
+display: flex;
 justify-content: center;
-align-items: center;
-}*/
+	text-align: center;
+}
+.panelists-section .panelist{
+	width: 25%;
+	height: auto; 
+	padding: 5px;
+
+}
 
 .panelists-section h2{
-    padding: 2em 0 2em;      
+padding: 2em 0 2em;      
 text-align: center;
 letter-spacing: 6px;    
 color: #06122C;   
@@ -106,37 +111,24 @@ font-size: 35px;
 line-height: 52px;
 
 }
-.card{
-    display: flex;
-    justify-content: center;
 
-}
-.photo-panelist{
-	width: 40%;
-	height: 250Px;
-	padding: 20px;
-	text-align: center;
-}
-.photo-panelist h3{
-	font-family: Poppins;
+.panelist h3{
+font-family: Poppins;
 font-style: normal;
 font-weight: bold;
 text-transform: uppercase;
-font-size: 25px;
+font-size: 20px;
 line-height: 37px;
-letter-spacing: 0.0139884px;
 color: #F6C746;
 
 }
-.photo-panelist h3 span{
-	color: #06122C;
-}
 .panelists-section p{
-	font-family: Poppins;
+	
+font-family: Poppins;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
-line-height: 24px;
+line-height: 20px;
 text-align: center;
 color: #06122C;
 
@@ -147,15 +139,108 @@ color: #06122C;
 	color: #06122C;  
 }
 
-.cards-collaborators{
- margin-bottom: 20px;
-padding: 2em 0 2em;
+.collaborators .cards-collaborators{
+padding: 5em 0 2em;
 display: flex;
 justify-content: center;
+}
+
+/*cuenta regresiva*/
+
+.time-clock{
+	padding: 2em 0 2em;
+	 display: flex;
+	justify-content: center;
+	margin-bottom: 1px;
+	font-size: 20px;
+	color: #F6C746;
+	background-color:#06122C;;
+}
+.time-clock p{
+	
+		font-family: 'Poppins';
+		font-style: normal;
+		text-transform: uppercase;
+		color:#FFFFFF;
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 100px;
 }
 
 /* footer */
 
 .footer-img img{
     width: 100%;
+}
+
+@media (max-width: 769px){
+
+	.first-session {
+	 overflow: hidden;	
+     background-size: cover;
+	 background-repeat: no-repeat;
+	 
+ 
+	}
+	.session-contenedor{
+		width: 100%;
+	}
+	.session-contenedor img{
+		width: 100%;
+	}
+
+	.logo-title {
+		margin: 0;
+	}
+	.logo-title img{
+		max-width: 81%;
+		margin-left: 7%;
+		margin-top: 20%;
+	}
+	
+	.first-session p{
+		
+		margin-top: 70px;
+		width:auto;
+		margin-left: 10px;
+		font-size: 20px;
+	}
+	.panelists-section  h2{
+		font-size: 30px;
+
+	}
+	.collaborators h2{
+		
+		font-size: 30px;
+	}
+
+	.card{
+		flex-direction: column;
+		margin-left: 50px;
+	}
+	.cards-collaborators{
+		flex-direction: column;
+		margin-left: 50px;
+	
+	}
+	.cards-collaborators img{
+		width: 70%;
+	}
+	.panelist img{
+		margin-top: 50px;
+	
+	}
+	.text img{
+		display: none;
+	}
+	
+	
+	
+
+	
+	
+	
+
+	
+	
 }
