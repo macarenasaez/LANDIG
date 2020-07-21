@@ -242,8 +242,21 @@ justify-content: center;
 	.text img{
 		display: none;
 	}
+
+	.time-clock{
+	flex-direction: column;
+	width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 50px;
+   
+	}
 	
+	.conte-clock{
+		border-bottom: none;
+	}
 	
+    
 	
 
 	
